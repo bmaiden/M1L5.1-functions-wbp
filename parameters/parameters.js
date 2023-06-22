@@ -14,7 +14,6 @@ const customerIds = [
 /**
  * This function checks if all the product IDs being displayed
  * in the digital storefront in the list are unique.
- *
  * (We wouldn't want to show the same product twice)
  *
  * There is a bug in this function that is causing it to return the wrong answer
