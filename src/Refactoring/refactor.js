@@ -44,5 +44,4 @@ function previewFullPrice(salesTax, shippingPrice) {
     mugPriceAfterShippingRounded,
   ];
 }
-
 module.exports = previewFullPrice;

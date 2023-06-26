@@ -41,7 +41,7 @@ console.log(areAllIdsUnique(customerIds));
  * allIds should be the list of all customer IDs
  * thisId should be the current ID we are checking for uniqueness
  */
-function isUnique(thisId, allIds) {
+function isUnique(allIds, thisId) {
   for (let i = allIds.indexOf(thisId); i < allIds.length; i++) {
     if (allIds[i] === thisId) {
       return false;
