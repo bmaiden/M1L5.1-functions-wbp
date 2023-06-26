@@ -54,7 +54,7 @@ Please concentrate your efforts within the "src" folder, as it will serve as you
 - The code already returns the expected result and passes the automated test, so you will know your refactor is successful if it shortens the code, and the tests still pass after your changes.
 
 - You can run the tests for just this exercise using this command:
-  - `npx jest ./Refactoring/refactor.test.js`
+  - `npm test`
 
 ### Step 2:
 
@@ -73,7 +73,7 @@ Please concentrate your efforts within the "src" folder, as it will serve as you
 - This code already works and passes the tests. You will know your refactoring is successful if the code becomes shorter, and the tests still pass after your changes.
 
 - You can run the tests for just this exercise using this command:
-- `npx jest firstClassFunctions/firstClassFunctions.test.js`
+- `npm test`
 
 
 ### Step 3:
@@ -85,7 +85,7 @@ Please concentrate your efforts within the "src" folder, as it will serve as you
 - This code will throw an error when run, can you find a way to fix it by only re-ordering the lines of code? If you get stuck, check the lecture notes on how different types of function declarations and expressions are hoisted.
 
 - You can run the tests for just this exercise using this command:
-  - `npx jest ./hoisting/hoisting.test.js`
+  - `npm test`
 
 ### Step 4:
 
@@ -100,7 +100,7 @@ Please concentrate your efforts within the "src" folder, as it will serve as you
 - There is a bug on one line in the `areAllIdsUnique()` function. Can you find it and fix it so the function works as expected? You will need to examine both functions to solve this problem, but you should only make edits to `areAllIdsUnique()`. 
 
 - You can run the tests for just this exercise using this command:
-  - `npx jest parameters/parameters.test.js`
+  - `npm test`
 
 <details>
 
@@ -121,10 +121,3 @@ Later in your JavaScript career, it is likely that you will work with a technolo
 - If all the tests are marked as passed, then you have successfully completed the exercise.
 
 _Solution code is available in the util folder, should you find yourself stuck._
-
-
-
-
-
-    -  After you've forked the repo, clone the repo into your `~/code` folder and `cd` into the newly created folder. 
-- Install Jest and any other dependencies using this command: `npx jest ./Refactoring/refactor.test.js`
