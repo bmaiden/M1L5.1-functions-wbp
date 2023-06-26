@@ -1,4 +1,4 @@
-const areAllIdsUnique = require("./parameters");
+const areAllIdsUnique = require("../../src/parameters/parameters");
 const input = [
   "54402779",
   "39143786",
