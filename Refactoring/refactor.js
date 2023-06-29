@@ -3,7 +3,7 @@
  * for the list of most commonly sold items in our digital storefront.
  *
  * This code currently works (and passes all tests),
- * but it is  hard to read due to repetitive code.
+ * but it is hard to read due to repetitive code.
  *
  * Can you refactor it by writing functions that reduce repetition?
  */

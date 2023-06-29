@@ -2,7 +2,7 @@
 
 ![The Scenario](./assets/banner-scenario.png)
 
-You work for a company that publishes a small digital storefront that sells promotional goods for touring bands. The codebase is old, and many developers with different preferences for function syntax have worked on it over the past few years.
+You work for a company which publishes a small digital storefront that sells promotional goods for touring bands. The codebase is old, and many developers with different preferences for function syntax have worked on it over the past few years.
 
 Your job is refactoring some parts of the code to reduce unnecessary repetition (DRY: Don't Repeat Yourself). There is also some debugging to do as well.
 
@@ -10,7 +10,7 @@ Your job is refactoring some parts of the code to reduce unnecessary repetition 
 
 ![Requirements](./assets/banner-requirements.png)
 
-1. Refactoring some parts of the code to reduce unnecessary repetition (DRY: Don't Repeat Yourself).
+1. Refactor some parts of the code to reduce unnecessary repetition (DRY: Don't Repeat Yourself).
     - In the `refactor.js` file, rework the `previewFullPrice()` function with DRYer code.
     - In the `firstClassFunctions.js` file, rework the `formatProducts()` function with DRYer code. 
 2. Fix the known bugs in the code caused by incorrect use of function calls.
@@ -43,7 +43,7 @@ For this project, there won't be any need to open a browser. All of your code wi
 
 - This file contains a function that calculates the full price after tax and shipping for a few of the most commonly sold products. The code is very repetitive, as the previous developer would always copy and paste a block of code every time a new product was added.
 
-- To complete this exercise, find the behavior that is being repeated for each product, and extract it into a function. Then, call that function once for each product and return the result.
+- To complete this exercise, find the code that is being repeated for each product, and extract it into a function. Then, call that function once for each product and return the result. The function should return an array of updated prices. 
 
 - The code already returns the expected result and passes the automated test, so you will know your refactor is successful if it shortens the code, and the tests still pass after your changes.
 
@@ -51,6 +51,26 @@ For this project, there won't be any need to open a browser. All of your code wi
   - `npx jest ./Refactoring/refactor.test.js`
 
 ### Step 2:
+
+- Navigate to `/firstClassFunctions/firstClassFunctions.js`
+
+- This file contains a function called `formatProducts()`
+
+- Just like in `Refactoring/refactor.js`, we want to reduce repetition in this function by taking repetitive code and extracting it into a named function.
+
+- On lines 21, 34, and 47, we call `.map()` with an anonymous function once each for the carousel, grid, and sidebar. Notice that the anonymous function for each has the exact same behavior, since we format the data the same in each place.
+
+- Instead of using this repetitive anonymous function, could we instead move that behavior into a named function? Once we've done that, we can pass that named function as the argument to `.map()` once each for grid, sidebar, and carousel, shortening our code substantially.
+
+- Can you refactor this code by extracting the repeated behavior into a function?
+
+- This code already works and passes the tests. You will know your refactoring is successful if the code becomes shorter, and the tests still pass after your changes.
+
+- You can run the tests for just this exercise using this command:
+- `npx jest firstClassFunctions/firstClassFunctions.test.js`
+
+
+### Step 3:
 
 - Navigate to `/hoisting/hoisting.js`
 
@@ -61,7 +81,7 @@ For this project, there won't be any need to open a browser. All of your code wi
 - You can run the tests for just this exercise using this command:
   - `npx jest ./hoisting/hoisting.test.js`
 
-### Step 3:
+### Step 4:
 
 - Navigate to `/parameters/parameters.js`
 
@@ -71,7 +91,7 @@ For this project, there won't be any need to open a browser. All of your code wi
 
   - `areAllIdsUnique()` is a function that takes an array of product IDs and returns true if _ALL_ the IDs are unique.
 
-- There is a bug on one line in the `areAllIdsUnique()` function. Can you find it and fix it so the function works as expected?
+- There is a bug on one line in the `areAllIdsUnique()` function. Can you find it and fix it so the function works as expected? You will need to examine both functions to solve this problem, but you should only make edits to `areAllIdsUnique()`. 
 
 - You can run the tests for just this exercise using this command:
   - `npx jest parameters/parameters.test.js`
@@ -89,29 +109,7 @@ Later in your JavaScript career, it is likely that you will work with a technolo
 </details>
 
 
-
-
-
-### Step 4:
-
-- Navigate to `/firstClassFunctions/firstClassFunctions.js`
-
-- This file contains a function called `formatProducts()`
-
-- Just like in `Refactoring/refactor.js`, we want to reduce repetition in this function by taking repetitive code and extracting it into a named function.
-
-- On lines 21, 34, and 47, we call `.map()` with an anonymous function once each for the carousel, grid, and sidebar. Notice that the anonymous function for each has the exact same behavior, since we format the data the same in each place.
-
-- Instead of using this repetitive anonymous function, could we instead move that behavior into a named function? Once we've done that, we can pass that named function as the argument to `.map()` once each for grid, sidebar, and carousel, shortening our code substantially.
-
-- Can you refactor this code by extracting the repeated behavior into a function?
-
-- This code already works and passes the tests. You will know your refactoring is successful if the code becomes shorter, and the tests still pass after your changes.
-
 ### Wrap-up
-
-- You can run the tests for just this exercise using this command:
-  - `npx jest firstClassFunctions/firstClassFunctions.test.js`
 - The tests will run the functions you've modified, and ensure they return the correct values
 - If any of the tests are marked as failed, you can scroll up through your console history to see an explanation of which functions need further fixes
 - If all the tests are marked as passed, then you have successfully completed the exercise.
