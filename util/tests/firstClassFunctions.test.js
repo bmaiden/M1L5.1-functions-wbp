@@ -2,7 +2,7 @@ const carouselProducts = ["t-shirt", "sweater", "polo"];
 const gridProducts = ["mug", "small_poster", "medium_poster", "large_poster"];
 const sidebarProducts = ["sweatpants", "shorts", "skirt", "baseball_cap"];
 
-const formatProducts = require("./firstClassFunctions");
+const formatProducts = require("../../src/firstClassFunctions/firstClassFunctions");
 
 const solution = [
   ["T-shirt", "Sweater", "Polo"],

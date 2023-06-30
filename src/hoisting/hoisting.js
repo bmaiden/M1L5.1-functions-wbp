@@ -37,6 +37,7 @@ function greetingGenerator(customerName, storeName) {
   return greeting;
 }
 
+
 console.log(greetingGenerator("John Doe", "JavaScript Store"));
 
 module.exports = greetingGenerator;

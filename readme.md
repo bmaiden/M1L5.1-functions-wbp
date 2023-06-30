@@ -1,6 +1,6 @@
 # JavaScript Functions WBP
 
-![The Scenario](./assets/banner-scenario.png)
+![The Scenario](./util/assets/banner-scenario.png)
 
 You work for a company which publishes a small digital storefront that sells promotional goods for touring bands. The codebase is old, and many developers with different preferences for function syntax have worked on it over the past few years.
 
@@ -8,7 +8,7 @@ Your job is refactoring some parts of the code to reduce unnecessary repetition 
 
 ---
 
-![Requirements](./assets/banner-requirements.png)
+![Requirements](./util/assets/banner-requirements.png)
 
 1. Refactor some parts of the code to reduce unnecessary repetition (DRY: Don't Repeat Yourself).
     - In the `refactor.js` file, rework the `previewFullPrice()` function with DRYer code.
@@ -21,21 +21,27 @@ For this project, there won't be any need to open a browser. All of your code wi
 
 ---
 
-![Tickets](./assets/banner-tickets.png)
+![Tickets](./util/assets/banner-tickets.png)
 
 <!-- [Kanban Board Tickets](https://trello.com/b/V2tKlN6Y/javascript-functions) -->
-![Kanban Board](./assets/M1L5.1-functions-trello-board.png)
+![Kanban Board](./util/assets/M1L5.1-functions-trello-board.png)
 
 
 ---
 
-![Coding Practice](./assets/banner-coding.png)
+![Coding Practice](./util/assets/banner-coding.png)
 
 ### Preparatory Steps:
 
+Please concentrate your efforts within the "src" folder, as it will serve as your designated working directory for this exercise. It is important to note that no changes need to be made to any files within the util folder in order to successfully complete the task.
+
 - Fork and clone [this](https://git.generalassemb.ly/SEI-Standard-Curriculum/M1L5.1-functions-wbp) repository. Make sure you are logged in to your GitHub Enterprise account.
-    -  After you've forked the repo, clone the repo into your `~/code` folder and `cd` into the newly created folder. 
-- Install Jest and any other dependencies using this command: `npx jest ./Refactoring/refactor.test.js`
+- cd into the directory
+- run the following command: npm i 
+- this command installs testing dependencies needed to verify your work
+- run the tests in the terminal using the command : npm run test
+- expect tests to fail on first run, before changes are made
+- confirm that all tests are passing to complete the module
 
 ### Step 1:
 
@@ -48,7 +54,7 @@ For this project, there won't be any need to open a browser. All of your code wi
 - The code already returns the expected result and passes the automated test, so you will know your refactor is successful if it shortens the code, and the tests still pass after your changes.
 
 - You can run the tests for just this exercise using this command:
-  - `npx jest ./Refactoring/refactor.test.js`
+  - `npm test`
 
 ### Step 2:
 
@@ -67,7 +73,7 @@ For this project, there won't be any need to open a browser. All of your code wi
 - This code already works and passes the tests. You will know your refactoring is successful if the code becomes shorter, and the tests still pass after your changes.
 
 - You can run the tests for just this exercise using this command:
-- `npx jest firstClassFunctions/firstClassFunctions.test.js`
+- `npm test`
 
 
 ### Step 3:
@@ -79,7 +85,7 @@ For this project, there won't be any need to open a browser. All of your code wi
 - This code will throw an error when run, can you find a way to fix it by only re-ordering the lines of code? If you get stuck, check the lecture notes on how different types of function declarations and expressions are hoisted.
 
 - You can run the tests for just this exercise using this command:
-  - `npx jest ./hoisting/hoisting.test.js`
+  - `npm test`
 
 ### Step 4:
 
@@ -94,7 +100,7 @@ For this project, there won't be any need to open a browser. All of your code wi
 - There is a bug on one line in the `areAllIdsUnique()` function. Can you find it and fix it so the function works as expected? You will need to examine both functions to solve this problem, but you should only make edits to `areAllIdsUnique()`. 
 
 - You can run the tests for just this exercise using this command:
-  - `npx jest parameters/parameters.test.js`
+  - `npm test`
 
 <details>
 
@@ -113,3 +119,5 @@ Later in your JavaScript career, it is likely that you will work with a technolo
 - The tests will run the functions you've modified, and ensure they return the correct values
 - If any of the tests are marked as failed, you can scroll up through your console history to see an explanation of which functions need further fixes
 - If all the tests are marked as passed, then you have successfully completed the exercise.
+
+_Solution code is available in the util folder, should you find yourself stuck._

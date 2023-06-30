@@ -1,4 +1,4 @@
-const greetingGenerator = require("./hoisting");
+const greetingGenerator = require("../../src/hoisting/hoisting");
 
 test("it should return the expected value without a typeError", () => {
   expect(greetingGenerator("John Doe", "JavaScript Store")).toBe(

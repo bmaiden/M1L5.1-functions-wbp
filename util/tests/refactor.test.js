@@ -1,4 +1,4 @@
-const previewFullPrice = require("./refactor");
+const previewFullPrice = require("../../src/Refactoring/refactor");
 
 test("it still calculates the prices correctly after refactoring", () => {
   expect(previewFullPrice(0.08, 4.0)).toEqual([
