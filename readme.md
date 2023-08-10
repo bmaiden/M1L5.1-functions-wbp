@@ -2,7 +2,7 @@
 
 ![The Scenario](./util/assets/banner-scenario.png)
 
-You work for a company which publishes a small digital storefront that sells promotional goods for touring bands. The codebase is old, and many developers with different preferences for function syntax have worked on it over the past few years.
+You work for MerchUp, a company which publishes a small digital storefront that sells promotional goods for touring bands. The codebase is old, and many developers with different preferences for function syntax have worked on it over the past few years.
 
 Your job is refactoring some parts of the code to reduce unnecessary repetition (DRY: Don't Repeat Yourself). There is also some debugging to do as well.
 
