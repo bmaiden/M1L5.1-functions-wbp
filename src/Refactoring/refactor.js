@@ -14,34 +14,18 @@ function previewFullPrice(salesTax, shippingPrice) {
   const largePosterPrice = 22.99;
   const mugPrice = 12.99;
 
-  shirtPriceAfterTax = shirtPrice * (1 + salesTax);
-  shirtPriceAfterShipping = shirtPriceAfterTax + shippingPrice;
-  shirtPriceAfterShippingRounded = shirtPriceAfterShipping.toFixed(2);
+  let finalPrice = function(product) {
+    productPriceAfterTax = product * (1 + salesTax);
+    productPriceAfterShipping = productPriceAfterTax + shippingPrice;
+    return productPriceAfterShippingRounded = productPriceAfterShipping.toFixed(2);
+  }
 
-  sweatshirtPriceAfterTax = sweatshirtPrice * (1 + salesTax);
-  sweatshirtPriceAfterShipping = sweatshirtPriceAfterTax + shippingPrice;
-  sweatshirtPriceAfterShippingRounded = sweatshirtPriceAfterShipping.toFixed(2);
-
-  smallPosterPriceAfterTax = smallPosterPrice * (1 + salesTax);
-  smallPosterPriceAfterShipping = smallPosterPriceAfterTax + shippingPrice;
-  smallPosterPriceAfterShippingRounded =
-    smallPosterPriceAfterShipping.toFixed(2);
-
-  largePosterPriceAfterTax = largePosterPrice * (1 + salesTax);
-  largePosterPriceAfterShipping = largePosterPriceAfterTax + shippingPrice;
-  largePosterPriceAfterShippingRounded =
-    largePosterPriceAfterShipping.toFixed(2);
-
-  mugPriceAfterTax = mugPrice * (1 + salesTax);
-  mugPriceAfterShipping = mugPriceAfterTax + shippingPrice;
-  mugPriceAfterShippingRounded = mugPriceAfterShipping.toFixed(2);
-
-  return [
-    shirtPriceAfterShippingRounded,
-    sweatshirtPriceAfterShippingRounded,
-    smallPosterPriceAfterShippingRounded,
-    largePosterPriceAfterShippingRounded,
-    mugPriceAfterShippingRounded,
+return [
+    finalPrice(shirtPrice),
+    finalPrice(sweatshirtPrice),
+    finalPrice(smallPosterPrice),
+    finalPrice(largePosterPrice),
+    finalPrice(mugPrice),
   ];
 }
 module.exports = previewFullPrice;
